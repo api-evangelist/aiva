@@ -1,19 +1,48 @@
 aid: aiva
 name: Aiva
-description: Aiva is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: AIVA (Artificial Intelligence Virtual Artist) is an AI music generation
+  platform that composes original music across more than 250 styles in seconds. Musicians,
+  content creators, and studios generate tracks from prompts or from uploaded audio
+  and MIDI influences, build custom style models, edit the resulting compositions,
+  and export to MP3, MIDI, and WAV. Paid plans add higher download limits, longer
+  tracks, social monetization rights, and full copyright ownership. AIVA is a consumer-
+  and creator-facing product; as of this enrichment pass it publishes no public developer
+  API, SDKs, or /.well-known discovery documents.
 url: https://raw.githubusercontent.com/api-evangelist/aiva/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.aiva.ai/assets/img/full-logo.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: Enrichment pass 2026-07-17 searched the provider surface; AIVA is
+  a consumer AI-music product with no public developer API. Only a probed domain-security
+  artifact and identity hygiene were added.
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Artificial Intelligence
+- Music
+- Music Generation
+- Generative AI
+- Audio
+- MIDI
+- Creative Tools
+- Media
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aiva-domain-security.yml
 - type: Website
   url: https://aiva.ai/
+- type: Pricing
+  url: https://www.aiva.ai/pricing
+- type: Support
+  url: https://www.aiva.ai/contact
+- type: Community
+  url: https://discordapp.com/invite/ypDnFXN
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
